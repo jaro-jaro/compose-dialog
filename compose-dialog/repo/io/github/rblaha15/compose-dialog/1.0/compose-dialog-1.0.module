@@ -1,0 +1,242 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.github.rblaha15",
+    "module": "compose-dialog",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.4-rc-2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "compose-dialog-1.0.aar",
+          "url": "compose-dialog-1.0.aar",
+          "size": 34205,
+          "sha512": "735d9c8fcd99b5dd4c8ac6e7945a2bc0c37dd6bcd3f7ce8edf15e9aa5baa425c17103294d9bc6573403a7e9a850cc7c37370fa085db03e51ee9ff0c3db21c4c7",
+          "sha256": "842c4b6f98fa5e1ca6399af6a33a5168ea0e2a88f022d0f160d4a1d3d274a5f7",
+          "sha1": "2041be55609f72e8850388feaf3dc7a8b37ef627",
+          "md5": "ab700661c66505fd04f4f2987afe9d8c"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.10.1"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "androidx.compose",
+          "module": "compose-bom",
+          "version": {
+            "requires": "2023.06.01"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui"
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui-graphics"
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui-tooling-preview"
+        },
+        {
+          "group": "androidx.compose.material3",
+          "module": "material3"
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.5.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "compose-dialog-1.0.aar",
+          "url": "compose-dialog-1.0.aar",
+          "size": 34205,
+          "sha512": "735d9c8fcd99b5dd4c8ac6e7945a2bc0c37dd6bcd3f7ce8edf15e9aa5baa425c17103294d9bc6573403a7e9a850cc7c37370fa085db03e51ee9ff0c3db21c4c7",
+          "sha256": "842c4b6f98fa5e1ca6399af6a33a5168ea0e2a88f022d0f160d4a1d3d274a5f7",
+          "sha1": "2041be55609f72e8850388feaf3dc7a8b37ef627",
+          "md5": "ab700661c66505fd04f4f2987afe9d8c"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "compose-dialog-1.0-sources.jar",
+          "url": "compose-dialog-1.0-sources.jar",
+          "size": 1816,
+          "sha512": "09a8e617e9fe9b27e39977b0011fd6d76574bdc01f856d21861503fd83043d534f6916c1b9bdf56ef1e786c76fd9be18b079323d8bb80541cd9054a1378d3ae6",
+          "sha256": "72ebb130a8634fb0db0507b2bfd795dfce0e67c6eeef651d20fedc004bfb64c5",
+          "sha1": "8c22ae89f2850f7f2c39c18b6d8cbd5b80a5f911",
+          "md5": "63f44f248ae784c44602023a3fb95ca2"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "compose-dialog-1.0-javadoc.jar",
+          "url": "compose-dialog-1.0-javadoc.jar",
+          "size": 282436,
+          "sha512": "dff0dcbc7f0613c68822cab6371e4e1eecdc17a159c23cd30c4480712b7ba9fb04f7819744de14fa4115ba49b6bf496c8846b4ade79036a62c76ec3e325cdbb7",
+          "sha256": "e35b9e47d905de7cb869a5b9a3484338bd780cba01f1c9067ec5cceff79713d3",
+          "sha1": "98e1b852cafc8433a5ef752a2517364871ebf80b",
+          "md5": "ef7a2af0129c11f7737726d7e3185e6c"
+        }
+      ]
+    },
+    {
+      "name": "releaseTestFixturesVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.github.rblaha15",
+          "module": "compose-dialog",
+          "version": {
+            "requires": "1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "compose-dialog-1.0-test-fixtures.aar",
+          "url": "compose-dialog-1.0-test-fixtures.aar",
+          "size": 818,
+          "sha512": "c837f87862d22eed885b9c034a6721930d927f187db109cf32729995cd6f77bbd7e4680d13dbac7c82d8c45a70f43c07be31d8d051dcfe56ad56fb9b11e1fa56",
+          "sha256": "4fa3b1f52341ec6f6b095cf9bcf29c2da15b0636e36d1ab50cb1645992343237",
+          "sha1": "2be6dd0778633245dc176cffc2d12f2dfaaec136",
+          "md5": "66092dc54199fb8cdd994d6a03a056aa"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "compose-dialog",
+          "name": "compose-dialog-test-fixtures",
+          "version": "unspecified"
+        }
+      ]
+    },
+    {
+      "name": "releaseTestFixturesVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.github.rblaha15",
+          "module": "compose-dialog",
+          "version": {
+            "requires": "1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "compose-dialog-1.0-test-fixtures.aar",
+          "url": "compose-dialog-1.0-test-fixtures.aar",
+          "size": 818,
+          "sha512": "c837f87862d22eed885b9c034a6721930d927f187db109cf32729995cd6f77bbd7e4680d13dbac7c82d8c45a70f43c07be31d8d051dcfe56ad56fb9b11e1fa56",
+          "sha256": "4fa3b1f52341ec6f6b095cf9bcf29c2da15b0636e36d1ab50cb1645992343237",
+          "sha1": "2be6dd0778633245dc176cffc2d12f2dfaaec136",
+          "md5": "66092dc54199fb8cdd994d6a03a056aa"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "compose-dialog",
+          "name": "compose-dialog-test-fixtures",
+          "version": "unspecified"
+        }
+      ]
+    }
+  ]
+}
