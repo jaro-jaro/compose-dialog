@@ -70,7 +70,7 @@ dependencies {
     debugImplementation(libs.ui.test.manifest)
 
 //    implementation(project(":compose-dialog"))
-    implementation("io.github.rblaha15:compose-dialog:1.0")
+    implementation("com.github.jaro-jaro:compose-dialog:1.0.0")
 
     implementation(libs.androidx.lifecycle.viewmodel.compose)
 }

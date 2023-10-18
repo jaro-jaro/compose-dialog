@@ -9,9 +9,9 @@ plugins {
 publishing {
     publications {
         register<MavenPublication>("release") {
-            groupId = "io.github.rblaha15"
+            groupId = "com.github.jaro-jaro"
             artifactId = "compose-dialog"
-            version = "1.0"
+            version = "1.0.1"
 
             afterEvaluate {
                 from(components["release"])
