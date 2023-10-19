@@ -9,7 +9,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.jaro-jaro</groupId>
   <artifactId>compose-dialog</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.4</version>
   <packaging>aar</packaging>
   <dependencyManagement>
     <dependencies>
@@ -32,7 +32,7 @@
     <dependency>
       <groupId>com.github.jaro-jaro</groupId>
       <artifactId>compose-dialog</artifactId>
-      <version>1.0.2</version>
+      <version>1.0.4</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
