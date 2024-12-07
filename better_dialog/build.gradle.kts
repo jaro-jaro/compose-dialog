@@ -4,11 +4,33 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpackConfig
 
 plugins {
+    `maven-publish`
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.composeCompiler)
     alias(libs.plugins.composeMultiplatform)
 }
+
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.jaro-jaro"
+            artifactId = "compose-dialog"
+            version = "1.2.0"
+
+//            afterEvaluate {
+//                from(components["release"])
+//            }
+        }
+    }
+    repositories {
+        maven {
+            name = "compose-dialog"
+            url = uri("${project.projectDir}/repo")
+        }
+    }
+}
+
 
 kotlin {
     androidTarget {
