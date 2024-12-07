@@ -1,6 +1,7 @@
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.kotlin.gradle.plugin.KotlinJsCompilerType
 import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpackConfig
 
 plugins {
@@ -16,7 +17,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.jaro-jaro"
             artifactId = "compose-dialog"
-            version = "1.2.0"
+            version = "1.2.1"
 
 //            afterEvaluate {
 //                from(components["release"])
@@ -47,21 +48,8 @@ kotlin {
     jvm()
 
     @OptIn(ExperimentalWasmDsl::class)
-    wasmJs {
-        browser {
-            val rootDirPath = project.rootDir.path
-            val projectDirPath = project.projectDir.path
-            commonWebpackConfig {
-                devServer = (devServer ?: KotlinWebpackConfig.DevServer()).apply {
-                    static = (static ?: mutableListOf()).apply {
-                        // Serve sources to debug inside browser
-                        add(rootDirPath)
-                        add(projectDirPath)
-                    }
-                }
-            }
-        }
-    }
+    wasmJs()
+    js(KotlinJsCompilerType.IR)
 
     sourceSets {
         commonMain.dependencies {
