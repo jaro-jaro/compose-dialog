@@ -2,7 +2,6 @@ import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.plugin.KotlinJsCompilerType
-import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpackConfig
 
 plugins {
     `maven-publish`
@@ -17,7 +16,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.jaro-jaro"
             artifactId = "compose-dialog"
-            version = "1.2.1"
+            version = "1.2.2"
 
 //            afterEvaluate {
 //                from(components["release"])
