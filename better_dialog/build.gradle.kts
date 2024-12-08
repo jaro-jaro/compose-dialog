@@ -16,7 +16,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.jaro-jaro"
             artifactId = "compose-dialog"
-            version = "1.2.2"
+            version = "1.2.3"
 
 //            afterEvaluate {
 //                from(components["release"])
