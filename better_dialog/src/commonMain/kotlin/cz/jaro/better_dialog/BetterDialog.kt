@@ -3,8 +3,6 @@ package cz.jaro.better_dialog
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.material3.AlertDialog
-import androidx.compose.material3.BasicAlertDialog
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
@@ -56,7 +54,7 @@ private fun <D, S : AlertDialogStyle<D>> ShowDialog(state: AlertDialogState<D, S
 private fun <D> ShowBasicDialog(
     state: AlertDialogState<D, AlertDialogStyle.Basic<D>>,
     style: AlertDialogStyle.Basic<D>,
-) = BasicAlertDialog(
+) = androidx.compose.material3.BasicAlertDialog(
     onDismissRequest = {
         state.hide()
         style.onDismissed?.invoke()
@@ -72,7 +70,7 @@ private fun <D> ShowBasicDialog(
 private fun ShowSimpleDialog(
     state: AlertDialogState<Nothing?, AlertDialogStyle.Simple>,
     style: AlertDialogStyle.Simple,
-) = AlertDialog(
+) = androidx.compose.material3.AlertDialog(
     onDismissRequest = {
         state.hide()
         style.onDismissed?.invoke()
@@ -116,7 +114,7 @@ private fun ShowSimpleDialog(
 private fun <D> ShowMaterialDialog(
     state: AlertDialogState<D, AlertDialogStyle.Material<D>>,
     style: AlertDialogStyle.Material<D>,
-) = AlertDialog(
+) = androidx.compose.material3.AlertDialog(
     onDismissRequest = {
         state.hide()
         style.onDismissed?.invoke()
