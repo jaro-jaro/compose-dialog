@@ -16,7 +16,7 @@ private fun <D, S : AlertDialogStyle<D>> AlertDialogStateInColumnScope(columnSco
     object : AlertDialogStateInColumnScope<D, S>, AlertDialogState<D, S> by state, ColumnScope by columnScope {}
 
 /**
- * Version: 1.2.3
+ * Version: 1.2.4
  */
 @Composable
 fun AlertDialog(
