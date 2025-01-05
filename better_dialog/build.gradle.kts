@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
+import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
 //import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.plugin.KotlinJsCompilerType
@@ -16,7 +17,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.jaro-jaro"
             artifactId = "compose-dialog"
-            version = "1.2.5"
+            version = "1.2.6"
 
 //            afterEvaluate {
 //                from(components["release"])
@@ -44,11 +45,14 @@ kotlin {
 //    iosArm64()
 //    iosSimulatorArm64()
 //
-//    jvm()
+    jvm()
 
-//    @OptIn(ExperimentalWasmDsl::class)
-//    wasmJs()
-    js(KotlinJsCompilerType.IR)
+    @OptIn(ExperimentalWasmDsl::class)
+    wasmJs()
+    js(KotlinJsCompilerType.IR) {
+        browser()
+        nodejs()
+    }
 
     sourceSets {
         commonMain.dependencies {
